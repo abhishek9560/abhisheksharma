@@ -326,6 +326,9 @@
                 </div>
             </div>
         </main>
+        <M-main>
+
+        </M-main>
         <footer>
             <div class="footer_div">© Online Facilitation System for Students. All rights reserved @2018
             </div>
@@ -336,37 +339,8 @@
 
 
 
-
-
     <script>
-        // top details show code.
-        const U_data = JSON.parse(localStorage.getItem("userdetails_filled"));
-        const Date_Of_Birth = U_data.dob;
-        const parts = Date_Of_Birth.split("-");
-        const dob_I = parts[2] + "-" + parts[1] + "-" + parts[0];
-        if (U_data) {
-            document.getElementById("img_div").src = U_data.image;
-            document.getElementById("name").innerText = U_data.name;
-            document.getElementById("gender").innerText = U_data.Gender;
-            document.getElementById("f_name").innerText = U_data.father;
-            document.getElementById("mobile_no").innerText = U_data.mobile;
-            document.getElementById("DOB").innerText = dob_I;
-            document.getElementById("m_name").innerText = U_data.mother;
-            document.getElementById("e_mail").innerText = U_data.email;
-            document.getElementById("r_no").innerText = U_data.roll_no;
-            document.getElementById("r_code").innerText = U_data.roll_code;
-            document.getElementById("UID_aadhaar").innerText = U_data.uidsno;
-            document.getElementById("age").innerText = U_data.age;
-            document.getElementById("s_c_name").innerText = U_data.sc_name;
-            document.getElementById("class").innerText = U_data.sk_class;
-            document.getElementById("stream").innerText = U_data.stream;
-            document.getElementById("skills").innerText = U_data.skills;
-            // document.getElementById("").innerText = U_data.address;
-
-        } else {
-            alert("No Data Found !\n❌( कोई भी जानकारी नहीं है। )\nPlease Check Your Information !\n( कृपया अपनी जानकारी जाँच करे। )");
-        }
-
+        // SCRIPT STATEMENT START
         function toggleBox() {
             document.getElementById("SlBox").classList.toggle("active");
         }
@@ -491,3 +465,32 @@
 </div> -->
 <!-- <p id="fileName">No file chosen</p> -->
 <!-- </p> -->
+
+<!-- // top details show code.
+const U_data = JSON.parse(localStorage.getItem("userdetails_filled"));
+const Date_Of_Birth = U_data.dob;
+const parts = Date_Of_Birth.split("-");
+const dob_I = parts[2] + "-" + parts[1] + "-" + parts[0];
+if (U_data) {
+document.getElementById("img_div").src = U_data.image;
+document.getElementById("name").innerText = U_data.name;
+document.getElementById("gender").innerText = U_data.Gender;
+document.getElementById("f_name").innerText = U_data.father;
+document.getElementById("mobile_no").innerText = U_data.mobile;
+document.getElementById("DOB").innerText = dob_I;
+document.getElementById("m_name").innerText = U_data.mother;
+document.getElementById("e_mail").innerText = U_data.email;
+document.getElementById("r_no").innerText = U_data.roll_no;
+document.getElementById("r_code").innerText = U_data.roll_code;
+document.getElementById("UID_aadhaar").innerText = U_data.uidsno;
+document.getElementById("age").innerText = U_data.age;
+document.getElementById("s_c_name").innerText = U_data.sc_name;
+document.getElementById("class").innerText = U_data.sk_class;
+document.getElementById("stream").innerText = U_data.stream;
+document.getElementById("skills").innerText = U_data.skills;
+// document.getElementById("").innerText = U_data.address;
+
+} else {
+alert("No Data Found !\n❌( कोई भी जानकारी नहीं है। )\nPlease Check Your Information !\n( कृपया अपनी जानकारी जाँच करे।
+)");
+} -->
